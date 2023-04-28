@@ -1,0 +1,28 @@
+body{
+    padding:0;
+    margin: 0;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+    background-image:url("/res/fancylounge.jpg")
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    size:100% 100%;
+    background:#00000059;
+    width:100vw;
+    height: 100vh;;
+}
+h1{
+    font-size:10rem;
+    color:rgba(255, 255, 255, 0);
+    /* text-decoration: underline; */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
