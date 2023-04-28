@@ -56,6 +56,10 @@ img{
     height:50%;
     margin-bottom:1rem;
     border-radius:1rem;
+    box-shadow:0px 0px 5px #000000;
+}
+#memeBtn{
+    margin-top:1rem;
 }
 @media (max-width: 500px) {
     p{
