@@ -1,5 +1,5 @@
-
 fetchJoke = () =>{
+    sessionStorage.setItem("count" , "clicked")
     try {
         console.log("fetching json data...")
         document.getElementById("jokesDisplay").innerText = "Loading..."
@@ -18,4 +18,9 @@ fetchJoke = () =>{
 }
 process = (data) =>{
     document.getElementById("jokesDisplay").innerText = data.value
+    document.getElementById("avatar").src = "../res/cn.jpg"
+    if(sessionStorage.getItem("count").length > 0){
+        document.getElementById("generateBtn").innerHTML = "AGAIN!"
+    }
+    document.getElementById("avatar").style.display = "flex"
 }
