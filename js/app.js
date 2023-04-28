@@ -49,12 +49,11 @@ fetchMeme = () =>{
 }
 
 meme = (data) =>{
-    console.log(data)
     document.getElementById("jokesDisplay").innerText = data.title;
     document.getElementById("avatar").src = data.url;
     if(window.innerWidth < 500){
-        document.getElementById("avatar").style.width = "50%"
-        document.getElementById("avatar").style.height = "80%"
+        document.getElementById("avatar").style.width = "80%"
+        document.getElementById("avatar").style.height = "50%"
     }    
     if(sessionStorage.getItem("count").length > 0){
         document.getElementById("memeBtn").innerHTML = "AGAIN!"
